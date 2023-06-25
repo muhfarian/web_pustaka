@@ -1,24 +1,19 @@
-<script setup>
+<script>
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid ">
-      <a class="navbar-brand" href="#">Web Pustaka</a>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="dropdown collapse navbar-collapse" id="navbarNavAltMarkup">
-        <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Kategori
-        </button>
-        <ul class="dropdown-menu">
-          <router-link to="/allKategori" class="nav-link ms-2 me-5">Semua Kategori</router-link>
-          <router-link to="/insertKategori" class="nav-link ms-2 me-5">Tambahkan Kategori</router-link>
-          <router-link to="/updateKategori" class="nav-link ms-2 me-5">Update Kategori</router-link>
-          <router-link to="/delKategori" class="nav-link ms-2 me-5">Hapus Kategori</router-link>
-
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <router-link to="/allKategori" class="btn">Kategori</router-link>
+          <router-link to="/allBuku" class="btn">Buku</router-link>
+          <router-link to="/allAnggota" class="btn">Anggota</router-link>
+        </div>
       </div>
     </div>
   </nav>
