@@ -11,9 +11,16 @@ import allBuku from "@/components/buku/allBuku.vue";
 import updateBuku from "@/components/buku/updateBuku.vue";
 import allAnggota from "@/components/anggota/allAnggota.vue";
 import updateAnggota from "@/components/anggota/updateAnggota.vue";
+import HomeView from "@/view/HomeView.vue";
 
 
 const routes = [
+    {
+        path: "/",
+        name: "Home",
+        component: HomeView
+
+    },
     {
         path: "/allKategori",
         name: "allKategori",
