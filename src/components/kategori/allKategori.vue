@@ -1,9 +1,10 @@
 <template>
-  <div><table>
+  <div class="container d-flex flex-column align-items-lg-center" style="margin-top: 10%">
+    <table>
     <thead>
     <tr>
-      <td class="border" style="text-align: center;width: 150px"><strong>Kode Kategori</strong></td>
-      <td class="border" style="text-align: center;width: 200px"><strong>Kategori</strong></td>
+      <td class="border" style="text-align: center;width: 200px"><strong>Kode Kategori</strong></td>
+      <td class="border" style="text-align: center;width: 300px"><strong>Kategori</strong></td>
     </tr>
     </thead>
     <tbody>
@@ -28,24 +29,28 @@
     </tbody>
   </table></div>
 
-
-  <div class="modal-body ms-5">
-    <h4 style="margin-bottom: 50px">Tambahkan Kategori </h4>
+    <div class="d-flex flex-column align-items-center justify-content-center" style="margin-top: 100px">
+    <h5 class="mb-3">Tambahkan Kategori </h5>
     <input
-        class="form-control"
+        style="width: 300px"
+        class="form-control mb-3"
         type="text"
         v-model="insertkode_kategori"
         placeholder="Kode Kategori"
         aria-label="default input example" /><br />
     <input
+        style="width: 300px"
         class="form-control"
         type="text"
         v-model="insertkategori"
         placeholder="Kategori"
         aria-label="default input example" /><br />
-    <button type="button" class="btn btn-primary" v-on:click="postKategori()">Tambah Kategori </button>
-    <button class="btn btn-secondary ms-2" @click="refreshpage">Refresh</button>
-  </div>
+      <div class="d-flex flex-row mt-3">
+        <button type="button" class="btn btn-primary" v-on:click="postKategori()">Tambah Kategori </button>
+        <button class="btn btn-secondary ms-2" @click="refreshpage">Refresh</button>
+      </div>
+
+    </div>
 
 </template>
 
@@ -53,9 +58,9 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const allData = 'http://localhost/data_buku/selectall_kategori.php';
-const insertKategori = 'http://localhost/data_buku/insert_kategori.php';
-const delKategori = 'http://localhost/data_buku/delete_kategori.php';
+const allData = 'http://web-library.000webhostapp.com/selectall_kategori.php';
+const insertKategori = 'http://web-library.000webhostapp.com/insert_kategori.php';
+const delKategori = 'http://web-library.000webhostapp.com/delete_kategori.php';
 
 export default {
   data() {

@@ -1,5 +1,5 @@
 <template>
-
+  <div class="container d-flex flex-column align-items-lg-center" style="margin-top: 10%">
   <div class="modal-body">
     <h4 class="mb-5">
       Update Anggota
@@ -44,14 +44,15 @@
     >Back
     </router-link>
   </div>
+  </div>
 </template>
 
 <script>
 import axios from "axios";
 import {ref} from "vue";
 
-const updateAnggota = 'http://localhost/data_buku/update_anggota.php';
-const selBynomor = 'http://localhost/data_buku/selectbynomor_anggota.php';
+const updateAnggota = 'http://web-library.000webhostapp.com/update_anggota.php';
+const selBynomor = 'http://web-library.000webhostapp.com/selectbynomor_anggota.php';
 
 export default {
   computed: {

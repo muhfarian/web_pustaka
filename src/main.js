@@ -12,6 +12,14 @@ import updateBuku from "@/components/buku/updateBuku.vue";
 import allAnggota from "@/components/anggota/allAnggota.vue";
 import updateAnggota from "@/components/anggota/updateAnggota.vue";
 import HomeView from "@/view/HomeView.vue";
+import allPeminjaman from "@/components/peminjaman/allPeminjaman.vue";
+import dikembalikan from "@/components/peminjaman/readbyStatus.vue";
+import dipinjam from "@/components/peminjaman/readbyStatus.vue";
+import readbyStatus from "@/components/peminjaman/readbyStatus.vue";
+import selectbyID_peminjaman from "@/components/peminjaman/selectbyID_peminjaman.vue";
+import peminjamanMaster from "@/components/peminjaman/peminjamanMaster.vue";
+import peminjamanDetail from "@/components/peminjaman/peminjamanDetail.vue";
+import allPeminjamandetail from "@/components/peminjaman/allPeminjamandetail.vue";
 
 
 const routes = [
@@ -51,6 +59,36 @@ const routes = [
         name: "updateAnggota",
         component: updateAnggota
     },
+    {
+        path: "/allPeminjaman",
+        name: "allPeminjama",
+        component: allPeminjaman
+    },
+    {
+        path: "/readbyStatus/:status_peminjaman",
+        name: "readStatus",
+        component: readbyStatus
+    },
+    {
+        path: "/selbyIDPeminjaman",
+        name: "selbyIDPeminjaman",
+        component: selectbyID_peminjaman
+    },
+    {
+        path: "/peminjamanMaster",
+        name: "peminjamanMaster",
+        component: peminjamanMaster
+    },
+    {
+        path: "/peminjamanDetail",
+        name: "peminjamanDetail",
+        component: peminjamanDetail
+    },
+    {
+        path: "/allPeminjamandetail",
+        name: "allPeminjamandetail",
+        component: allPeminjamandetail
+    }
 ];
 
 const router= createRouter({

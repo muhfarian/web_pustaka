@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 800px"><table>
+  <div class="container d-flex flex-column align-items-lg-center" style="margin-top: 10%"><table>
     <thead>
     <tr>
       <td class="border" style="text-align: center;width: 150px"><strong>Nomor</strong></td>
@@ -34,9 +34,9 @@
     </tbody>
   </table></div>
 
-
+  <div class="container d-flex flex-column align-items-lg-center" style="margin-top: 100px">
   <div class="modal-body ms-5">
-    <h4 style="margin-bottom: 50px">Tambahkan Anggota </h4>
+    <h4 class="mb-3">Tambahkan Anggota </h4>
     <input
         class="form-control"
         type="text"
@@ -70,15 +70,16 @@
     <button type="button" class="btn btn-primary" v-on:click="postAnggota()">Tambah Anggota </button>
     <button class="btn btn-secondary ms-2" @click="refreshpage">Refresh</button>
   </div>
+  </div>
 </template>
 
 <script>
 import axios from 'axios';
 import { ref } from 'vue';
 
-const allData = 'http://localhost/data_buku/selectall_anggota.php';
-const insertAnggota = 'http://localhost/data_buku/insert_anggota.php';
-const delAnggota = 'http://localhost/data_buku/delete_anggota.php';
+const allData = 'http://web-library.000webhostapp.com/selectall_anggota.php';
+const insertAnggota = 'http://web-library.000webhostapp.com/insert_anggota.php';
+const delAnggota = 'http://web-library.000webhostapp.com/delete_anggota.php';
 
 export default {
   data() {

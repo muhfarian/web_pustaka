@@ -1,5 +1,5 @@
 <template>
-
+  <div class="container d-flex flex-column align-items-lg-center" style="margin-top: 10%">
   <div class="modal-body">
     <h4 class="mb-5">
       Update Kategori
@@ -56,14 +56,15 @@
     >Back
     </router-link>
   </div>
+  </div>
 </template>
 
 <script>
 import axios from "axios";
 import {ref} from "vue";
 
-const updateBuku = 'http://localhost/data_buku/update_buku.php';
-const selBykode = 'http://localhost/data_buku/selectbykode_buku.php';
+const updateBuku = 'http://web-library.000webhostapp.com/update_buku.php';
+const selBykode = 'http://web-library.000webhostapp.com/selectbykode_buku.php';
 
 export default {
   data() {

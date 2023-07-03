@@ -2,9 +2,9 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const allData = 'http://localhost/data_buku/selectall_buku.php';
-const insertBuku = 'http://localhost/data_buku/insert_buku.php';
-const delBuku = 'http://localhost/data_buku/delete_buku.php';
+const allData = 'http://web-library.000webhostapp.com/selectall_buku.php';
+const insertBuku = 'http://web-library.000webhostapp.com/insert_buku.php';
+const delBuku = 'http://web-library.000webhostapp.com/delete_buku.php';
 export default {
   data(){
     return{
@@ -85,7 +85,7 @@ export default {
 </script>
 
 <template>
-  <div style="width: 1000px;"><table>
+  <div class="container d-flex flex-column align-items-lg-center" style="margin-top: 10%"><table>
     <thead>
     <tr>
       <td class="border" style="text-align: center;width: 150px"><strong>Kode Buku</strong></td>
@@ -125,8 +125,9 @@ export default {
     </tbody>
   </table></div>
 
-  <div class="modal-body ms-5" style="width: 300px">
-    <h4 style="margin-bottom: 50px">Tambahkan Buku </h4>
+  <div class="container d-flex flex-column align-items-lg-center" style="margin-top: 100px">
+  <div class="modal-body ms-5">
+    <h4 class="mb-3">Tambahkan Buku </h4>
     <input
         class="form-control"
         type="text"
@@ -171,6 +172,7 @@ export default {
         aria-label="default input example" /><br />
     <button type="button" class="btn btn-primary" v-on:click="postBuku()">Tambah Buku </button>
     <button class="btn btn-secondary ms-2" @click="refreshpage">Refresh</button>
+  </div>
   </div>
 
 </template>
