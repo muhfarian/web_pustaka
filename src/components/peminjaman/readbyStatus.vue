@@ -32,7 +32,7 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const selectbyStatus = 'http://web-library.000webhostapp.com/selectbystatus_peminjaman.php';
+const selectbyStatus = 'https://web-library.000webhostapp.com/selectbystatus_peminjaman.php';
 
 export default {
   data() {

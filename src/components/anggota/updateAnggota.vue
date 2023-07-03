@@ -51,8 +51,8 @@
 import axios from "axios";
 import {ref} from "vue";
 
-const updateAnggota = 'http://web-library.000webhostapp.com/update_anggota.php';
-const selBynomor = 'http://web-library.000webhostapp.com/selectbynomor_anggota.php';
+const updateAnggota = 'https://web-library.000webhostapp.com/update_anggota.php';
+const selBynomor = 'https://web-library.000webhostapp.com/selectbynomor_anggota.php';
 
 export default {
   computed: {

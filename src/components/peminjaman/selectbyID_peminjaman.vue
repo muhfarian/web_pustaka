@@ -44,7 +44,7 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const selbyID = 'http://web-library.000webhostapp.com/selectbyid_peminjaman.php';
+const selbyID = 'https://web-library.000webhostapp.com/selectbyid_peminjaman.php';
 
 export default {
   data() {

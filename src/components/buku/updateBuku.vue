@@ -63,8 +63,8 @@
 import axios from "axios";
 import {ref} from "vue";
 
-const updateBuku = 'http://web-library.000webhostapp.com/update_buku.php';
-const selBykode = 'http://web-library.000webhostapp.com/selectbykode_buku.php';
+const updateBuku = 'https://web-library.000webhostapp.com/update_buku.php';
+const selBykode = 'https://web-library.000webhostapp.com/selectbykode_buku.php';
 
 export default {
   data() {

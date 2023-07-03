@@ -33,8 +33,8 @@
 import axios from "axios";
 import {ref} from "vue";
 
-const updateKategori = 'http://web-library.000webhostapp.com/update_kategori.php';
-const selBykode = 'http://web-library.000webhostapp.com/selectbykode_kategori.php';
+const updateKategori = 'https://web-library.000webhostapp.com/update_kategori.php';
+const selBykode = 'https://web-library.000webhostapp.com/selectbykode_kategori.php';
 
 export default {
   data() {

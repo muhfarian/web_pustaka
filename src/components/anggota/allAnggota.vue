@@ -77,9 +77,9 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const allData = 'http://web-library.000webhostapp.com/selectall_anggota.php';
-const insertAnggota = 'http://web-library.000webhostapp.com/insert_anggota.php';
-const delAnggota = 'http://web-library.000webhostapp.com/delete_anggota.php';
+const allData = 'https://web-library.000webhostapp.com/selectall_anggota.php';
+const insertAnggota = 'https://web-library.000webhostapp.com/insert_anggota.php';
+const delAnggota = 'https://web-library.000webhostapp.com/delete_anggota.php';
 
 export default {
   data() {

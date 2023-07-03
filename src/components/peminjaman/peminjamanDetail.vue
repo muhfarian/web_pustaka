@@ -28,7 +28,7 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const insertPeminajamandetail = 'http://web-library.000webhostapp.com/insert_peminjamandetail.php';
+const insertPeminajamandetail = 'https://web-library.000webhostapp.com/insert_peminjamandetail.php';
 export default {
   data(){
     return{

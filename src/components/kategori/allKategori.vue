@@ -58,9 +58,9 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const allData = 'http://web-library.000webhostapp.com/selectall_kategori.php';
-const insertKategori = 'http://web-library.000webhostapp.com/insert_kategori.php';
-const delKategori = 'http://web-library.000webhostapp.com/delete_kategori.php';
+const allData = 'https://web-library.000webhostapp.com/selectall_kategori.php';
+const insertKategori = 'https://web-library.000webhostapp.com/insert_kategori.php';
+const delKategori = 'https://web-library.000webhostapp.com/delete_kategori.php';
 
 export default {
   data() {

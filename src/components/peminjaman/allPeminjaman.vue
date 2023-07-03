@@ -70,7 +70,7 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const allData = 'http://web-library.000webhostapp.com/selectall_peminjaman.php';
+const allData = 'https://web-library.000webhostapp.com/selectall_peminjaman.php';
 
 export default {
   data() {
