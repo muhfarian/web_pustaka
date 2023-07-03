@@ -99,7 +99,7 @@ export default {
     </thead>
     <tbody>
     <tr v-for="data in allBuku" >
-      <td class="border" style="text-align: center">{{ data.kode_buku }}</td>
+      <td class="border text-uppercase" style="text-align: center">{{ data.kode_buku }}</td>
       <td class="border" style="text-align: center">{{ data.judul }}</td>
       <td class="border" style="text-align: center">{{ data.pengarang }}</td>
       <td class="border" style="text-align: center">{{ data.penerbit }}</td>

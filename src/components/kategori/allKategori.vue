@@ -9,7 +9,7 @@
     </thead>
     <tbody>
     <tr v-for="data in allKategori" >
-      <td class="border" style="text-align: center">{{ data.kode_kategori }}</td>
+      <td class="border text-uppercase" style="text-align: center">{{ data.kode_kategori }}</td>
       <td class="border" style="text-align: center">{{ data.kategori }}</td>
       <td class="ps-3">
         <router-link
