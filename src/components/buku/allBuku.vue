@@ -3,8 +3,8 @@ import axios from 'axios';
 import { ref } from 'vue';
 
 const allData = 'https://web-library.000webhostapp.com/selectall_buku.php';
-const insertBuku = 'http://web-library.000webhostapp.com/insert_buku.php';
-const delBuku = 'http://web-library.000webhostapp.com/delete_buku.php';
+const insertBuku = 'https://web-library.000webhostapp.com/insert_buku.php';
+const delBuku = 'https://web-library.000webhostapp.com/delete_buku.php';
 export default {
   data(){
     return{
