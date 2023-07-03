@@ -16,7 +16,7 @@
           <td class="border" style="text-align: center">{{ data.id_peminjaman }}</td>
           <td class="border" style="text-align: center">{{ data.tanggal_peminjaman }}</td>
           <td class="border" style="text-align: center">{{ data.nomor_anggota }}</td>
-          <td class="border" style="text-align: center">{{ data.status_peminjaman }}</td>
+          <td class="border text-uppercase" style="text-align: center">{{ data.status_peminjaman }}</td>
           <td class="border" style="text-align: center">{{ data.tanggal_pengembalian }}</td>
           <td class="border" style="text-align: center">{{ data.durasi_keterlambatan }}</td>
          </tr>
