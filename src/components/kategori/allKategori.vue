@@ -33,7 +33,7 @@
     <h5 class="mb-3">Tambahkan Kategori </h5>
     <input
         style="width: 300px"
-        class="form-control mb-3"
+        class="form-control mb-3 text-uppercase"
         type="text"
         v-model="insertkode_kategori"
         placeholder="Kode Kategori"

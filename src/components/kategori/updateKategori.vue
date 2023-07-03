@@ -5,7 +5,7 @@
       Update Kategori
     </h4>
     <input
-        class="form-control"
+        class="form-control text-uppercase"
         type="text"
         v-model="updateKodekategori"
         placeholder="Kode Kategori"

@@ -129,7 +129,7 @@ export default {
   <div class="modal-body ms-5">
     <h4 class="mb-3">Tambahkan Buku </h4>
     <input
-        class="form-control"
+        class="form-control text-uppercase"
         type="text"
         v-model="insertkode_buku"
         placeholder="Kode Buku"

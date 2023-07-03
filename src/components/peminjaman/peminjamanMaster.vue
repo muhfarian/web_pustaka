@@ -9,7 +9,7 @@
         placeholder="Nomor Anggota"
         aria-label="default input example" /><br />
     <input
-        class="form-control"
+        class="form-control text-uppercase"
         type="text"
         v-model="insertstatuspeminjaman"
         placeholder="Status Peminjaman (DIPINJAM/DIKEMBALIKAN)"
